@@ -1,0 +1,170 @@
+.portfolio {
+    padding: 140px 0 165px;
+    @media (max-width: 1036px) {
+        padding: 80px 0 90px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 850px) {
+            display: block;
+        }
+    }
+    &__filter {
+        margin-right: 65px;
+        @media (max-width: 1036px) {
+            margin-right: 0;
+        }
+        @media (max-width: 850px) {
+            margin-top: 40px;
+        }
+    }
+    &__btn {
+        padding: 0;
+        padding-bottom: 5px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        background-color: transparent;
+        border: none;
+        letter-spacing: 2px;
+        color: #333333;
+        outline: none;
+        cursor: pointer;
+        @media (max-width: 580px) {
+            display: block;
+        }
+    }
+    &__btn + &__btn {
+        margin-left: 25px;
+        @media (max-width: 580px) {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+    &__content {
+        column-count: 4;
+        column-gap: 22px;
+        margin-top: 103px;
+        @media (max-width: 992px) {
+            column-count: 3;
+        }
+        @media (max-width: 768px) {
+            column-count: 2;
+            margin-top: 70px;
+        }
+        @media (max-width: 530px) {
+            column-gap: 7px;
+        }
+    }
+    &__work {
+        position: relative;
+        margin-top: 22px;
+        @media (max-width: 530px) {
+            margin-top: 10px;
+        }
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #ededed;
+            border: 12px solid rgba(255, 255, 255, 0.147164);
+            letter-spacing: 1.4px;
+            font-weight: 600;
+            color: #ffffff;
+            transition: 0.4s all;
+            opacity: 0;
+        }
+        &:hover &-link {
+            opacity: 1;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__more {
+        display: block;
+        margin-top: 72px;
+        padding: 42px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        color: #242121;
+        background: #f6f8fa;
+    }
+    &__blockquote {
+        font-family: "Merriweather", serif;
+        max-width: 650px;
+        margin: 130px auto 0;
+        text-align: center;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 36px;
+        color: #242121;
+        span {
+            display: block;
+            margin-top: 50px;
+            color: #9e9e9e;
+        }
+        @media (max-width: 740px) {
+            font-size: 15px;
+            padding: 0 15px;
+        }
+    }
+    &__video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 148px;
+        height: 324px;
+        background-image: url("../images/video-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__numbers {
+        margin-top: 164px;
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 740px) {
+            flex-wrap: wrap;
+            margin-top: 90px;
+        }
+        &-item {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            color: #242121;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 73px;
+            @media (max-width: 740px) {
+                padding: 0 20px;
+                margin-bottom: 15px;
+            }
+            span {
+                display: block;
+                margin-top: 9px;
+                font-family: "Open Sans", sans-serif;
+                color: #333333;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+.mixitup-control-active {
+    border-bottom: 1px solid #fcbb08;
+}

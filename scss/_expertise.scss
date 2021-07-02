@@ -1,0 +1,113 @@
+.expertise {
+    padding: 140px 0 160px;
+    @media (max-width: 992px) {
+        padding: 80px 0 100px;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 0 70px;
+    }
+    &__inner {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 800px) {
+            margin-top: 50px;
+            flex-direction: column;
+        }
+    }
+    &__info {
+        flex: 0 0 370px;
+        margin: 10px 30px 0 0;
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+        &-item {
+            padding: 2px 0 28px;
+            border-top: 2px solid #1d1d1d;
+            font-family: "Open Sans";
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: #1d1d1d;
+            position: relative;
+            span {
+                display: block;
+                margin-right: 7px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    right: -7px;
+                    width: 100%;
+                    background-color: #f0f0f0;
+                    height: 2px;
+                }
+            }
+        }
+    }
+    &__text p {
+        margin-bottom: 25px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 110px;
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+        @media (max-width: 450px) {
+            text-align: center;
+        }
+    }
+    &__item {
+        width: 370px;
+        padding-left: 85px;
+        position: relative;
+        @media (max-width: 992px) {
+            width: 50%;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 660px) {
+            width: 100%;
+        }
+        @media (max-width: 450px) {
+            padding-left: 0;
+            padding-top: 60px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 0;
+            top: -10px;
+            @media (max-width: 450px) {
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+        &--1::before {
+            background-image: url("../images/expertise-img1.svg");
+        }
+        &--2::before {
+            background-image: url("../images/expertise-img2.svg");
+        }
+        &--3::before {
+            background-image: url("../images/expertise-img3.svg");
+        }
+
+        &-title {
+            font-family: "Raleway";
+            font-weight: 700;
+            letter-spacing: 4.29px;
+            color: #333;
+        }
+        &-text {
+            margin-top: 17px;
+            color: #777;
+        }
+    }
+}
